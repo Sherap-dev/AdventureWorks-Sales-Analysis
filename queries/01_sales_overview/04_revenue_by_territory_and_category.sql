@@ -1,3 +1,18 @@
+-- ========================================
+-- Territory and Category Revenue Analysis
+-- Dataset: Adventure Works 2022
+-- ========================================
+-- Business Questions:
+-- 1. Which territories generate the most revenue 
+--    for in-store and online channels?
+-- 2. Which product categories drive the most revenue
+--    across all territories?
+-- 3. Which territories dominate sales for each 
+--    product category?
+-- 4. What is the top performing product category
+--    per territory for both channels?
+-- ========================================
+
 WITH
     OnlineInStorePerTerritoryPerProductCategorySalesCTE AS(
         SELECT 
