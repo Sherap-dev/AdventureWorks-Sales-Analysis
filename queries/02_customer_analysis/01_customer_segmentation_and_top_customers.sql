@@ -84,11 +84,11 @@ WITH
 
 --      2c. The highest number of order count was 12 coming from 64 customer.
 
--- SELECT
---     *,
---     AVG(RelationshipDays) OVER(PARTITION BY CustomerType) AS averageRelationshipDays,
---     ROUND(AVG(totalSpent) OVER(PARTITION BY CustomerType), 2) AS AverageSpent
--- FROM CustomerSegmentationCTE
+SELECT
+    *,
+    AVG(RelationshipDays) OVER(PARTITION BY CustomerType) AS averageRelationshipDays,
+    ROUND(AVG(totalSpent) OVER(PARTITION BY CustomerType), 2) AS AverageSpent
+FROM CustomerSegmentationCTE
 
 -- =====================================================
 -- QUERY 2: Customer Segmentation and Retention Count.
